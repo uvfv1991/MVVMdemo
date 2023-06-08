@@ -33,7 +33,6 @@
             android:id="@+id/tfl_flow_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            app:dataList="@{viewModel.dataList}"/>
+            android:padding="10dp" />
     </LinearLayout>
 </layout>

@@ -22,7 +22,7 @@ import q.rorbin.verticaltablayout.widget.ITabView;
  */
 public final class WanBindingAdapter {
 
-    private WanBindingAdapter() {
+   /* private WanBindingAdapter() {
 
     }
 
@@ -33,15 +33,14 @@ public final class WanBindingAdapter {
      * @param dataList  数据列表
      * @param <T>       数据类型
      */
-    @SuppressWarnings("unchecked")
-    @BindingAdapter("app:dataList")
+   /* @BindingAdapter("app:dataList")
     public static <T> void setDataList(ViewPager viewPager, List<T> dataList) {
         PagerAdapter adapter = viewPager.getAdapter();
         if (adapter instanceof BasePagerAdapter) {
             BasePagerAdapter basePagerAdapter = (BasePagerAdapter) adapter;
             basePagerAdapter.setDataList(dataList);
         }
-    }
+    }*/
 
     /**
      * 设置TagFlowLayout的数据列表
@@ -50,15 +49,14 @@ public final class WanBindingAdapter {
      * @param dataList      数据列表
      * @param <T>           数据类型
      */
-    @SuppressWarnings("unchecked")
-    @BindingAdapter("app:dataList")
+   /* @BindingAdapter("app:dataList")
     public static <T> void setDataList(TagFlowLayout tagFlowLayout, List<T> dataList) {
         TagAdapter adapter = tagFlowLayout.getAdapter();
         if (adapter instanceof BaseTagAdapter) {
             BaseTagAdapter baseTagAdapter = (BaseTagAdapter) adapter;
             baseTagAdapter.setDataList(dataList);
         }
-    }
+    }*/
 
 
 
@@ -68,7 +66,7 @@ public final class WanBindingAdapter {
      * @param tabLayout VerticalTabLayout
      * @param titleList 标题列表
      */
-    @BindingAdapter("app:titleList")
+    /*@BindingAdapter("app:titleList")
     public static void setTitleList(VerticalTabLayout tabLayout, List<String> titleList) {
         if (Utils.isListEmpty(titleList)) {
             return;
@@ -89,5 +87,5 @@ public final class WanBindingAdapter {
                         .build();
             }
         });
-    }
+    }*/
 }

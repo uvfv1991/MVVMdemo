@@ -1,14 +1,20 @@
-package com.coolweather.coolweatherjetpack.util
+package com.example.kotlin.util
 
-import com.coolweather.coolweatherjetpack.data.PlaceRepository
-import com.coolweather.coolweatherjetpack.data.WeatherRepository
-import com.coolweather.coolweatherjetpack.data.db.CoolWeatherDatabase
-import com.coolweather.coolweatherjetpack.data.network.CoolWeatherNetwork
-import com.coolweather.coolweatherjetpack.ui.MainModelFactory
-import com.coolweather.coolweatherjetpack.ui.area.ChooseAreaModelFactory
-import com.coolweather.coolweatherjetpack.ui.weather.WeatherModelFactory
+import androidx.lifecycle.ViewModelProvider
+import com.example.kotlin.app.AppViewModelFactory
+import com.example.kotlin.base.AppRepository
+import com.example.kotlin.http.AgroNetWork
 
+/**
+ *  author : jiangxue
+ *  date : 2023/5/31 16:53
+ *  description :仓库注入工具
+ */
 object InjectorUtil {
+    //主页
+    fun getHomeViewModelFactory() = AppViewModelFactory(AppRepository.getInstance( AgroNetWork.getInstance()))
+
+   /* fun getMainModelFactory() = MainModelFactory(getWeatherRepository())
 
     private fun getPlaceRepository() = PlaceRepository.getInstance(CoolWeatherDatabase.getPlaceDao(), CoolWeatherNetwork.getInstance())
 
@@ -18,6 +24,6 @@ object InjectorUtil {
 
     fun getWeatherModelFactory() = WeatherModelFactory(getWeatherRepository())
 
-    fun getMainModelFactory() = MainModelFactory(getWeatherRepository())
+    fun getMainModelFactory() = MainModelFactory(getWeatherRepository())*/
 
 }

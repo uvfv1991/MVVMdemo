@@ -1,4 +1,4 @@
-package com.coolweather.coolweatherjetpack.util
+package com.example.kotlin.util
 
 import android.view.LayoutInflater
 import android.widget.ImageView
@@ -7,11 +7,12 @@ import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bumptech.glide.Glide
-import com.coolweather.coolweatherjetpack.R
-import com.coolweather.coolweatherjetpack.data.model.weather.Weather
-import com.coolweather.coolweatherjetpack.databinding.ForecastItemBinding
-
-@BindingAdapter("bind:loadBingPic")
+/**
+ *  author : jiangxue
+ *  date : 2023/5/31 16:53
+ *  description :bindingAdapter
+ */
+/*@BindingAdapter("bind:loadBingPic")
 fun ImageView.loadBingPic(url: String?) {
     if (url != null) Glide.with(context).load(url).into(this)
 }
@@ -19,8 +20,9 @@ fun ImageView.loadBingPic(url: String?) {
 @BindingAdapter("bind:colorSchemeResources")
 fun SwipeRefreshLayout.colorSchemeResources(resId: Int) {
     setColorSchemeResources(resId)
-}
+}*/
 
+/*
 @BindingAdapter("bind:showForecast")
 fun LinearLayout.showForecast(weather: Weather?) = weather?.let {
     removeAllViews()
@@ -29,4 +31,4 @@ fun LinearLayout.showForecast(weather: Weather?) = weather?.let {
         DataBindingUtil.bind<ForecastItemBinding>(view)?.forecast = forecast
         addView(view)
     }
-}
+}*/

@@ -1,9 +1,10 @@
 apply plugin: 'com.android.library'
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        minSdkVersion 15
+        targetSdkVersion 28
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
     }
@@ -29,6 +30,9 @@ dependencies {
     api rootProject.ext.support["support-v4"]
     api rootProject.ext.support["appcompat-v7"]
     api rootProject.ext.support["recyclerview-v7"]
+    //
+    //rxkotlin
+    api rootProject.ext.dependencies.rxkotlin
     //rxjava
     api rootProject.ext.dependencies.rxjava
     api rootProject.ext.dependencies.rxandroid

@@ -1,11 +1,11 @@
 ext {
     //android开发版本配置
     android = [
-            compileSdkVersion: 29,
+            compileSdkVersion: 28,
             buildToolsVersion: "28.0.0",
             applicationId    : "com.goldze.mvvmhabit",
             minSdkVersion    : 18,
-            targetSdkVersion : 29,
+            targetSdkVersion : 28,
             versionCode      : 1,
             versionName      : "1.0",
     ]
@@ -27,6 +27,8 @@ ext {
     ]
     //依赖第三方配置
     dependencies = [
+            //rxkotlin
+            "rxkotlin"                               : "io.reactivex.rxjava2:rxkotlin:2.3.0",
             //rxjava
             "rxjava"                               : "io.reactivex.rxjava2:rxjava:2.2.3",
             "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:2.1.0",
